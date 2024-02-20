@@ -1,0 +1,64 @@
+body {
+  background-image: url('Wood2.jpg');
+  display: flex;
+  text-align: center;          
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  -webkit-text-fill-color: rgb(19, 32, 6);
+  font-style: oblique;
+}
+button {
+  background-color: hsl(0, 25%, 89%);
+  color: #0b0a0a;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 0 5px; /* Add margin between buttons */
+}
+button:hover {
+  background-color: #7867e8;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  grid-gap: 0; /* No gap between images */
+}
+.grid-item {
+  width: 100%;
+}
+.photo-frame {
+  width: 100%;
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove extra space below images */
+  margin: auto; /* Center images horizontally */
+}
+.photo-frame {
+  width: 100px;
+  height: 100px;
+  border-image-width: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 10px solid hsl(60, 3%, 31%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+.photo-frame img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
